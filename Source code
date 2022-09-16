@@ -1,0 +1,830 @@
+{
+   "WFWorkflowMinimumClientVersionString": "1106",
+   "WFWorkflowMinimumClientVersion": 1106,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 946986751,
+      "WFWorkflowIconGlyphNumber": 59737
+   },
+   "WFWorkflowClientVersion": "1146.11.1",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettext",
+         "WFWorkflowActionParameters": {
+            "WFTextActionText": "created by @islvri_\nتم تطوير الاداة بواسطة _islvri@\nVersion 1.5.4 - الإصدار 1.5.4  \nيدعم جميع الأجهزة من IOS 14 - 15.6⛔️ ⭐️\n⭐️Every devices support From IOS 14 - 15.6⛔️\n---------------------------------------\n𝑃𝑅𝑂𝑇𝐸𝐶𝑇𝐸𝐷 𝐵𝑌 𝐶𝑂𝑃𝑌𝑅𝐼𝐺𝐻𝑇 ✅\nمحمي من حقوق الطبع و النشر✅\n\n",
+            "UUID": "2FFB9876-3060-4FB4-9226-F123562A5FEA"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.comment",
+         "WFWorkflowActionParameters": {
+            "WFCommentActionText": "Special thanks to (Lemon Updater 🍋)\ncreated by @islvri_\nتم تطوير الاداة بواسطة _islvri@\nVersion 1.5.4 - الإصدار 1.5.4  \nيدعم جميع الأجهزة من IOS 14 - 15.6⛔️ ⭐️\n⭐️Every devices support From IOS 14 - 15.6⛔️\n\n\n‼️(Newer iOS updates or beta iOS versions may be not supported please do not use it on your device until I update the tool to support that version)‼️"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getmyworkflows",
+         "WFWorkflowActionParameters": {
+            "UUID": "C9EF5672-31DD-4BFA-B702-9C67AC4BCC7D",
+            "Folder": {
+               "Identifier": "AllShortcuts",
+               "DisplayString": "كل الاختصارات"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
+         "WFWorkflowActionParameters": {
+            "UUID": "B215DCB3-9CA7-4A09-804E-0EBC00080B7A"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "B215DCB3-9CA7-4A09-804E-0EBC00080B7A",
+                     "Type": "ActionOutput",
+                     "OutputName": "عنوان IP الحالي"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "GroupingIdentifier": "8BFD5B73-DDBA-429E-8FEE-1DF751256154",
+            "WFCondition": 101
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B215DCB3-9CA7-4A09-804E-0EBC00080B7A",
+                  "Type": "ActionOutput",
+                  "OutputName": "عنوان IP الحالي"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFNotificationActionBody": "No WiFi Connection ❌",
+            "UUID": "9B4BE297-F065-46B1-A259-C2D258656607",
+            "WFNotificationActionSound": false,
+            "WFNotificationActionTitle": "FileName Changer need to be Connected to wifi‼️"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.wifi.set",
+         "WFWorkflowActionParameters": {
+            "OnValue": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.wifi.set",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+         "WFWorkflowActionParameters": {
+            "WFDelayTime": 5
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getipaddress",
+         "WFWorkflowActionParameters": {
+            "UUID": "F58EB94D-2B24-4D20-94AA-5F0A86DC50AC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "F58EB94D-2B24-4D20-94AA-5F0A86DC50AC",
+                     "Type": "ActionOutput",
+                     "OutputName": "Current IP Address"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "GroupingIdentifier": "556713F2-20EB-4FFF-A71F-8C8F251BA2AF",
+            "WFCondition": 101
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "F58EB94D-2B24-4D20-94AA-5F0A86DC50AC",
+                  "Type": "ActionOutput",
+                  "OutputName": "Current IP Address"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFNotificationActionBody": "An error occurred the tools will now restart please don't quit shortcuts or lock the device.",
+            "UUID": "77D38C11-2C45-4A27-83C8-725863FBFAFB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "556713F2-20EB-4FFF-A71F-8C8F251BA2AF",
+            "UUID": "FB87B647-3DD7-4396-B988-E5E60F8FC4EC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.delay",
+         "WFWorkflowActionParameters": {
+            "WFDelayTime": 5
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+         "WFWorkflowActionParameters": {
+            "WFWorkflow": {
+               "workflowIdentifier": "B8875D3A-8EFA-4FC7-A89D-331CCD189E4E",
+               "workflowName": "FileName Changer v1.2",
+               "isSelf": true
+            },
+            "WFWorkflowName": "FileName Changer v1.2",
+            "UUID": "A541ED22-8FA8-4211-8E2F-1C5B0818AAE5"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "8BFD5B73-DDBA-429E-8FEE-1DF751256154",
+            "UUID": "FB077662-7904-44CF-B663-83D699103A80"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.filter.files",
+         "WFWorkflowActionParameters": {
+            "WFContentItemFilter": {
+               "Value": {
+                  "WFActionParameterFilterPrefix": 1,
+                  "WFContentPredicateBoundedDate": false,
+                  "WFActionParameterFilterTemplates": [
+                     {
+                        "Operator": 99,
+                        "Values": {
+                           "Unit": 4,
+                           "String": "Lemon Updater"
+                        },
+                        "Removable": true,
+                        "Property": "Name"
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFContentPredicateTableTemplate"
+            },
+            "WFContentItemInputParameter": {
+               "Value": {
+                  "OutputUUID": "C9EF5672-31DD-4BFA-B702-9C67AC4BCC7D",
+                  "Type": "ActionOutput",
+                  "OutputName": "اختصاراتي"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "E5DA5D13-5857-49B5-96B1-48024CB05371"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "E5DA5D13-5857-49B5-96B1-48024CB05371",
+                     "Type": "ActionOutput",
+                     "OutputName": "Files"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "GroupingIdentifier": "764D38DA-8E0D-4268-ADC1-7F1E1874F725",
+            "WFCondition": 101
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+         "WFWorkflowActionParameters": {
+            "WFAlertActionMessage": "You need to get Lemon updater because if FileName changer need to be updated it will tell you.",
+            "WFAlertActionTitle": "Do you want to get Lemon updater ?"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.url",
+         "WFWorkflowActionParameters": {
+            "Show-WFURLActionURL": true,
+            "WFURLActionURL": "https://routinehub.co/shortcut/11173",
+            "UUID": "710C3368-EE6C-4D6F-9A61-1F709B2AA105"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.openurl",
+         "WFWorkflowActionParameters": {
+            "Show-WFInput": true,
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "710C3368-EE6C-4D6F-9A61-1F709B2AA105",
+                  "Type": "ActionOutput",
+                  "OutputName": "URL"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "764D38DA-8E0D-4268-ADC1-7F1E1874F725",
+            "UUID": "AFEBFBEB-7F8A-4791-B30A-B315B7CB890D"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFItems": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Name"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "FileName Changer"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "Version"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "1.5.4"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "RH ID"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "11644"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "UUID": "B1D57810-48AA-46B3-B08A-20BFB8A124EC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B1D57810-48AA-46B3-B08A-20BFB8A124EC",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFWorkflow": {
+               "workflowIdentifier": "3CCC8EF0-01A4-42FE-9EBD-6C5BDC4C5D1C",
+               "workflowName": "Lemon Updater",
+               "isSelf": false
+            },
+            "UUID": "FBB1011C-8FE8-40B4-BA43-171B05F4F294",
+            "WFWorkflowName": "Lemon Updater"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "Type": "DeviceDetails",
+                     "Aggrandizements": [
+                        {
+                           "Type": "WFPropertyVariableAggrandizement",
+                           "PropertyName": "System Version"
+                        }
+                     ]
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "WFConditionalActionString": "15.7",
+            "GroupingIdentifier": "CF3E797F-9820-4744-ABE5-FABA2E667932",
+            "WFCondition": 99
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+         "WFWorkflowActionParameters": {
+            "WFAlertActionCancelButtonShown": false,
+            "WFAlertActionMessage": {
+               "Value": {
+                  "string": "Your system version ( iOS \uFFFC) has not been tested and may cause errors or problems. It is better to wait until we release a new update to support this version.",
+                  "attachmentsByRange": {
+                     "{26, 1}": {
+                        "Type": "DeviceDetails",
+                        "Aggrandizements": [
+                           {
+                              "Type": "WFPropertyVariableAggrandizement",
+                              "PropertyName": "System Version"
+                           }
+                        ]
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFAlertActionTitle": "Thanks for your wait⭐️"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "CF3E797F-9820-4744-ABE5-FABA2E667932",
+            "UUID": "89B8AB7C-716F-4044-8F05-8200571F215B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+         "WFWorkflowActionParameters": {
+            "WFAlertActionCancelButtonShown": false,
+            "WFAlertActionMessage": "Please select a file from your library to start the process and change the name.",
+            "WFAlertActionTitle": "Hello and welcome🍀"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.file",
+         "WFWorkflowActionParameters": {
+            "WFFile": {
+               "Value": {
+                  "Prompt": "Choose a file to change the name of it.",
+                  "Type": "Ask"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "C446F50D-AF6E-4086-A14E-54CD7AB1BFDF"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "C446F50D-AF6E-4086-A14E-54CD7AB1BFDF",
+                  "Type": "ActionOutput",
+                  "OutputName": "ملف"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "SelectedFile",
+            "UUID": "0D7FB084-50AE-4A98-9961-F0BBDE6A7360"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+         "WFWorkflowActionParameters": {
+            "WFAskActionPrompt": {
+               "Value": {
+                  "string": "New name for \uFFFC",
+                  "attachmentsByRange": {
+                     "{13, 1}": {
+                        "OutputUUID": "C446F50D-AF6E-4086-A14E-54CD7AB1BFDF",
+                        "Type": "ActionOutput",
+                        "OutputName": "ملف"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "46D627AC-FC67-4367-8921-17E2D35829FF"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "46D627AC-FC67-4367-8921-17E2D35829FF",
+                     "Type": "ActionOutput",
+                     "OutputName": "المُدخل المُقَدَم"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "GroupingIdentifier": "221B0DDF-8FA5-4E91-AC17-4D23DB880D69",
+            "WFCondition": 101
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.showresult",
+         "WFWorkflowActionParameters": {
+            "Text": "Please choose New Name for your file! ❌"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.runworkflow",
+         "WFWorkflowActionParameters": {
+            "WFWorkflowName": "FileName Changer v1.2",
+            "WFWorkflow": {
+               "workflowIdentifier": "B8875D3A-8EFA-4FC7-A89D-331CCD189E4E",
+               "workflowName": "FileName Changer v1.2",
+               "isSelf": true
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "221B0DDF-8FA5-4E91-AC17-4D23DB880D69",
+            "UUID": "B18FEAAE-1424-4A78-A89D-D92C7A45B3DA"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "46D627AC-FC67-4367-8921-17E2D35829FF",
+                  "Type": "ActionOutput",
+                  "OutputName": "المُدخل المُقَدَم"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "New Name",
+            "UUID": "5163063C-BB33-4A97-93A8-7569FDE17615"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.file.rename",
+         "WFWorkflowActionParameters": {
+            "WFFile": {
+               "Value": {
+                  "VariableName": "SelectedFile",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFNewFilename": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "46D627AC-FC67-4367-8921-17E2D35829FF",
+                        "Type": "ActionOutput",
+                        "OutputName": "المُدخل المُقَدَم"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "B0CC8951-05B9-48B0-AB97-570A908A52BF"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "B0CC8951-05B9-48B0-AB97-570A908A52BF",
+                  "Type": "ActionOutput",
+                  "OutputName": "ملف"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Saved Name2"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.number.random",
+         "WFWorkflowActionParameters": {
+            "WFRandomNumberMaximum": "100",
+            "WFRandomNumberMinimum": "90",
+            "UUID": "CCFEFBB4-BA3F-4C2D-B91F-7E2CFE12233D"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.alert",
+         "WFWorkflowActionParameters": {
+            "WFAlertActionMessage": {
+               "Value": {
+                  "string": "Your file name \uFFFC will change to \uFFFC are you sure?",
+                  "attachmentsByRange": {
+                     "{15, 1}": {
+                        "VariableName": "SelectedFile",
+                        "Type": "Variable"
+                     },
+                     "{32, 1}": {
+                        "VariableName": "New Name",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFAlertActionTitle": {
+               "Value": {
+                  "string": "\uFFFC% complete",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "CCFEFBB4-BA3F-4C2D-B91F-7E2CFE12233D",
+                        "Type": "ActionOutput",
+                        "OutputName": "رقم عشوائي"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.documentpicker.save",
+         "WFWorkflowActionParameters": {
+            "WFAskWhereToSave": true,
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Saved Name2",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "2BC519DA-A08D-4491-8BAD-CE40DD3C566F",
+            "WFSaveFileOverwrite": false
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "VariableName": "Saved Name2",
+                     "Type": "Variable"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "GroupingIdentifier": "F0AEFFE0-C101-4CCD-880D-99B92ECC1D6B",
+            "WFCondition": 100
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.notification",
+         "WFWorkflowActionParameters": {
+            "WFNotificationActionTitle": "Enjoy🍀 ",
+            "WFNotificationActionBody": "Completed✅",
+            "UUID": "A5246297-2338-48E4-AA04-012653F7C2D3"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "F0AEFFE0-C101-4CCD-880D-99B92ECC1D6B",
+            "UUID": "7820B541-4466-4904-B099-BD93C7846959"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+         "WFWorkflowActionParameters": {
+            "WFAskActionAllowsNegativeNumbers": false,
+            "UUID": "1294E836-B457-4EF3-BA28-5F1898E0BD01",
+            "WFInputType": "Number",
+            "WFAskActionPrompt": "Would you want to rate us 1/10 ? 💙"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.appendvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "1294E836-B457-4EF3-BA28-5F1898E0BD01",
+                  "Type": "ActionOutput",
+                  "OutputName": "المُدخل المُقَدَم"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Rate💙"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.sendemail",
+         "WFWorkflowActionParameters": {
+            "WFSendEmailActionToRecipients": {
+               "Value": {
+                  "WFContactFieldValues": [
+                     {
+                        "EntryType": 2,
+                        "SerializedEntry": {
+                           "link.contentkit.emailaddress": "salmanbujbara@gmail.com"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFContactFieldValue"
+            },
+            "WFSendEmailActionFrom": "User",
+            "UUID": "C16CBB78-DD53-44B1-9994-A3D09DB49BC9",
+            "WFSendEmailActionInputAttachments": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Rate💙",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFSendEmailActionSubject": {
+               "Value": {
+                  "string": "My rate  is \uFFFC ⭐️",
+                  "attachmentsByRange": {
+                     "{12, 1}": {
+                        "OutputUUID": "1294E836-B457-4EF3-BA28-5F1898E0BD01",
+                        "Type": "ActionOutput",
+                        "OutputName": "المُدخل المُقَدَم"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFEmailAccountActionSelectedAccount": "salman.2008S@hotmail.com"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.openapp",
+         "WFWorkflowActionParameters": {
+            "WFAppIdentifier": "com.apple.DocumentsApp",
+            "WFSelectedApp": {
+               "BundleIdentifier": "com.apple.DocumentsApp",
+               "Name": "Files",
+               "TeamIdentifier": "0000000000"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.exit",
+         "WFWorkflowActionParameters": {}
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFItems": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "@Silver"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "Developer "
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "1+"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "Version"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "14 - 15.6"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "For iOS "
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 0,
+                        "WFKey": {
+                           "Value": {
+                              "string": "@islvri_"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "instagram"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "UUID": "E78D671F-2361-451F-A5A9-0B299218C57D"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFFolderContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [
+      {
+         "Category": "Parameter",
+         "ParameterKey": "WFTextActionText",
+         "ActionIndex": 0,
+         "Text": "‼️Newer iOS updates or beta iOS versions may be not supported please do not use it on your device until I updated the tool to support that version.‼️",
+         "DefaultValue": "created by @islvri_\nتم تطوير الاداة بواسطة _islvri@\nVersion 1.5.4 - الإصدار 1.5.4  \nيدعم جميع الأجهزة من IOS 14 - 15.6⛔️ ⭐️\n⭐️Every devices support From IOS 14 - 15.6⛔️\n---------------------------------------\n𝑃𝑅𝑂𝑇𝐸𝐶𝑇𝐸𝐷 𝐵𝑌 𝐶𝑂𝑃𝑌𝑅𝐼𝐺𝐻𝑇 ✅\nمحمي من حقوق الطبع و النشر✅\n\n"
+      }
+   ],
+   "WFWorkflowTypes": [
+      "Watch"
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
